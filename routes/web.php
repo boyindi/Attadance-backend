@@ -4,6 +4,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\View\View;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CompanyController;
+
 
 Route::get('/', function (): View {
     return view('pages.auth.auth-login'); // ganti sesuai view kamu
@@ -15,5 +17,7 @@ Route::middleware(['auth'])->group(function () {
     })->name('home');
 
 route::resource('users', UserController::class);
+Route::resource('company',CompanyController::class);
+
 
 });

@@ -21,5 +21,20 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@1.com',
             'password' =>Hash::make('12345678'),
         ]);
+
+        // data dumy for company
+        \App\Models\Company::factory()->create([
+            'name' => 'PT regware technology',
+            'email' => 'boyindi@gmail.com',
+            'address' => 'Jl. Raya dewa ujung no 1 ciracas jakarta timur',
+            'latitude' => '-6.321234',
+            'longitude' => '106.123456',
+            'radius_km' => '0.5',
+            'time_in' => '08:00',
+            'time_out' => '17:00',
+        ]);
+
+
+
     }
 }
