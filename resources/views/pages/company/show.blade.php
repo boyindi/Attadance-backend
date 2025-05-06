@@ -43,6 +43,7 @@
                                         <label>Email Perusahaan</label>
                                         <p>{{ $company->email }}</p>
                                     </div>
+
                                     <div class="form-group col-md-6 col-12">
                                         <label>Radius KM</label>
                                         <p>{{ $company->radius_km }} KM</p>
