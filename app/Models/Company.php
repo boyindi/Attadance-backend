@@ -11,15 +11,14 @@ class Company extends Model
 
 
     protected $fillable = [
-        'name',
-        'email',
-        'address',
-        'phone',
-        'latitude',
-        'longitude',
-        'radius_km',
+        'user_id',
+        'date',
         'time_in',
         'time_out',
+        'latlong_in',
+        'latlong_out',
+
+
 
     ];
 

@@ -86,11 +86,11 @@
                                                 <td>{{ $user->created_at }}</td>
                                                 <td>
 
-                                                    <div class="d-flex justify-content-center">
+                                                    <div class="d-flex justify-content-center" style="gap: 6px;">
                                                         <a href='{{ route('users.edit', $user->id) }}'
-                                                            class="btn btn-sm btn-info btn-icon">
-                                                            <i class="fas fa-edit"></i>
-                                                            Edit
+                                                             class="btn btn-info btn-sm d-flex align-items-center px-2 py-1"
+                                                            style="font-size: 12px;">
+                                                            <i class="fas fa-edit mr-1" style="font-size: 12px;"></i> Edit
                                                         </a>
 
                                                         <form action="{{ route('users.destroy', $user->id) }}"
@@ -98,9 +98,10 @@
                                                             <input type="hidden" name="_method" value="DELETE" />
                                                             <input type="hidden" name="_token"
                                                                 value="{{ csrf_token() }}" />
-                                                            <button class="btn btn-sm btn-danger btn-icon confirm-delete">
-                                                                <i class="fas fa-times"></i> Delete
-                                                            </button>
+                                                                <button class="btn btn-danger btn-sm d-flex align-items-center px-2 py-1"
+                                                                style="font-size: 12px;">
+                                                            <i class="fas fa-times mr-1" style="font-size: 12px;"></i> Delete
+                                                        </button>
                                                         </form>
                                                     </div>
                                                 </td>

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\View\View;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\AttendanceControlller;
 
 
 Route::get('/', function (): View {
@@ -18,6 +19,7 @@ Route::middleware(['auth'])->group(function () {
 
 route::resource('users', UserController::class);
 Route::resource('company',CompanyController::class);
+route::resource('attendance', AttendanceControlller::class);
 
 
 });
