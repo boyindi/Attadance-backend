@@ -16,7 +16,7 @@ class CompanyController extends Controller
         return view('pages.company.show', compact('company'));
     }
     //edit
-    public function edit()
+    public function edit($id)
     {
         $company = Company::find(1);
         return view('pages.company.edit', compact('company'));
