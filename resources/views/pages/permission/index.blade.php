@@ -42,7 +42,7 @@
                             <div class="card-body">
 
                                 <div class="float-right">
-                                    <form method="GET" action="{{ route('permissions.index') }}">
+                                    <form method="GET" action="{{ route('permission.index') }}">
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="Search by name" name="name">
                                             <div class="input-group-append">
@@ -91,13 +91,13 @@
 
                                                 <td>
                                                     <div class="d-flex justify-content-center">
-                                                        <a href='{{ route('permissions.show', $permission->id) }}'
+                                                        <a href='{{ route('permission.show', $permission->id) }}'
                                                             class="btn btn-sm btn-info btn-icon">
                                                             <i class="fas fa-edit"></i>
                                                             Detail
                                                         </a>
 
-                                                        <form action="{{ route('permissions.destroy', $permission->id) }}"
+                                                        <form action="{{ route('permission.destroy', $permission->id) }}"
                                                             method="POST" class="ml-2">
                                                             <input type="hidden" name="_method" value="DELETE" />
                                                             <input type="hidden" name="_token"
