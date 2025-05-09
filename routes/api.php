@@ -35,7 +35,7 @@ Route::post('/checkout', [\App\Http\Controllers\Api\AttendanceController::class,
 Route::get('/ischeckedin', [\App\Http\Controllers\Api\AttendanceController::class, 'isCheckedin'])
     ->middleware('auth:sanctum');
 
-// update profile
+// // update profile
 // Route::post('/update-profile-test', function (Request $request) {
 //     return response()->json(['message' => 'Rute test berhasil']);
 // })->middleware('auth:sanctum');

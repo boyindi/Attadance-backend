@@ -31,6 +31,7 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             //
             $table->dropColumn('position');
+
             $table->dropColumn('department');
             $table->dropColumn('face_embedding');
             $table->dropColumn('image_url');
