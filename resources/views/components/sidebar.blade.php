@@ -16,7 +16,7 @@
 
             <li class="nav-item  ">
                 <a href="{{ route('users.index') }}"
-                    class="nav-link"><i class="fas fa-columns"></i> <span>Users</span></a>
+                    class="nav-link"><i class="fas fa-user"></i> <span>Users</span></a>
 
             </li>
             <li class="nav-item  ">
@@ -26,11 +26,11 @@
             </li>
             <li class="nav-item  ">
                 <a href="{{ route('attendance.index') }}"
-                    class="nav-link"><i class="fas fa-columns"></i> <span>Attendances</span></a>
+                    class="nav-link"><i class="fas fa-calendar-check"></i> <span>Attendances</span></a>
             </li>
             <li class="nav-item  ">
                 <a href="{{ route('permission.index') }}"
-                    class="nav-link"><i class="fas fa-columns"></i> <span>Permissions</span></a>
+                    class="nav-link"><i class="fas fa-user-shield"></i> <span>Permissions</span></a>
 
 
 

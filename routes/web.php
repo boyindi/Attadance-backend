@@ -24,4 +24,5 @@ route::resource('attendance', AttendanceControlller::class);
 route::resource('permission', PermissionController::class);
 
 
+
 });

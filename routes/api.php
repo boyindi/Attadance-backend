@@ -42,3 +42,10 @@ Route::get('/ischeckedin', [\App\Http\Controllers\Api\AttendanceController::clas
 
 Route::post('/update-profile', [\App\Http\Controllers\Api\AuthController::class, 'updateProfile'])
     ->middleware('auth:sanctum');
+
+    // create permission
+use App\Http\Controllers\Api\PermissionController;
+
+Route::apiResource('/api-permission', PermissionController::class)
+    ->middleware('auth:sanctum');
+
