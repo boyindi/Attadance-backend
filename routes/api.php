@@ -49,3 +49,7 @@ use App\Http\Controllers\Api\PermissionController;
 Route::apiResource('/api-permission', PermissionController::class)
     ->middleware('auth:sanctum');
 
+    // notes
+Route::apiResource('/api-notes', \App\Http\Controllers\Api\NoteController::class)
+    ->middleware('auth:sanctum');
+

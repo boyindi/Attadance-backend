@@ -2,7 +2,8 @@
 
 @section('title', 'Login') {{-- Set judul halaman menjadi "Login" --}}
 
-@push('style') {{-- Push tambahan style ke stack 'style' --}}
+@push('style')
+    {{-- Push tambahan style ke stack 'style' --}}
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="{{ asset('library/bootstrap-social/bootstrap-social.css') }}">
 @endpush
@@ -23,9 +24,8 @@
                 {{-- Input Email dengan validasi error --}}
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="email"
-                           class="form-control @error('email') is-invalid @enderror"
-                           value="{{ old('email') }}"name="email" tabindex="1">
+                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
+                        value="{{ old('email') }}"name="email" tabindex="1">
                     @error('email')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -61,7 +61,8 @@
 
 @endsection
 
-@push('scripts') {{-- Push tambahan script ke stack 'scripts' --}}
+@push('scripts')
+    {{-- Push tambahan script ke stack 'scripts' --}}
     <!-- JS Libraies -->
 
     <!-- Page Specific JS File -->
