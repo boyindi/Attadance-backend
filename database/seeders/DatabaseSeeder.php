@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'boyindi@gmail.com',
             'address' => 'Jl. Raya dewa ujung no 1 ciracas jakarta timur',
             'latitude' => '	-6.323116',
-            'longitude' => '	106.870941',
+            'longitude' => '106.870941',
             'radius_km' => '0.5',
             'time_in' => '08:00',
             'time_out' => '17:00',
