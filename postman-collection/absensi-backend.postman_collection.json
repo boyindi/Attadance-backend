@@ -1,0 +1,923 @@
+{
+	"info": {
+		"_postman_id": "06f5a245-e3a6-4d11-85c0-e134b2d0d03a",
+		"name": "absensi-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27400445"
+	},
+	"item": [
+		{
+			"name": "Api Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"boyindi1905@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://absensi.absensi.digital/api/login",
+					"protocol": "https",
+					"host": [
+						"absensi",
+						"absensi",
+						"digital"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respon 200 login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"boyindi1905@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Aug 2025 04:05:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 12,\n        \"name\": \"Boy Indi\",\n        \"email\": \"boyindi1905@gmail.com\",\n        \"email_verified_at\": null,\n        \"two_factor_secret\": null,\n        \"two_factor_recovery_codes\": null,\n        \"two_factor_confirmed_at\": null,\n        \"created_at\": \"2025-08-16T12:57:45.000000Z\",\n        \"updated_at\": \"2025-08-16T12:57:45.000000Z\",\n        \"phone\": \"081382631904\",\n        \"role\": \"staff\",\n        \"position\": \"frontend\",\n        \"department\": \"flutter mobile\",\n        \"face_embedding\": null,\n        \"image_url\": null\n    },\n    \"token\": \"4|mLN4HnI0fGYxtJJmWmfCx8E3aqTKuQ0Us1ly75NVdf99c73d\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "5|n4L5tpipiEwtLRKNRhCKIzGBZlK2cEcwwKJVSVquf6c3b90b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "5|n4L5tpipiEwtLRKNRhCKIzGBZlK2cEcwwKJVSVquf6c3b90b",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respon 200 user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer1|pwHY6XNLtrt40AganNQZ6iIGKFyyibj5ht2033Aw3a35e3e4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Aug 2025 04:06:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 12,\n    \"name\": \"Boy Indi\",\n    \"email\": \"boyindi1905@gmail.com\",\n    \"email_verified_at\": null,\n    \"two_factor_secret\": null,\n    \"two_factor_recovery_codes\": null,\n    \"two_factor_confirmed_at\": null,\n    \"created_at\": \"2025-08-16T12:57:45.000000Z\",\n    \"updated_at\": \"2025-08-16T12:57:45.000000Z\",\n    \"phone\": \"081382631904\",\n    \"role\": \"staff\",\n    \"position\": \"frontend\",\n    \"department\": \"flutter mobile\",\n    \"face_embedding\": null,\n    \"image_url\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "api logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|mLN4HnI0fGYxtJJmWmfCx8E3aqTKuQ0Us1ly75NVdf99c73d",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\":\"boyindi1905@gmail.com\",\r\n   \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respon 200 logout",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Aug 2025 04:07:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Logged out successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/company",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|62KrxFSmnX37CvAb7Ivs3h1COfne6xFkGT8knkWKd913e50c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "4|mLN4HnI0fGYxtJJmWmfCx8E3aqTKuQ0Us1ly75NVdf99c73d",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/company",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"company"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respon 200 company",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "4|mLN4HnI0fGYxtJJmWmfCx8E3aqTKuQ0Us1ly75NVdf99c73d",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"company"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Aug 2025 08:14:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"PT regware technology\",\n        \"email\": \"boyindi@gmail.com\",\n        \"address\": \"Jl. Raya dewa ujung no 1 ciracas jakarta timur\",\n        \"latitude\": \"\\t-6.323116\",\n        \"longitude\": \"\\t106.870941\",\n        \"radius_km\": \"0.5\",\n        \"time_in\": \"08:00:00\",\n        \"time_out\": \"17:00:00\",\n        \"created_at\": \"2025-08-16T09:23:53.000000Z\",\n        \"updated_at\": \"2025-08-16T09:23:53.000000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "api checkin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|62KrxFSmnX37CvAb7Ivs3h1COfne6xFkGT8knkWKd913e50c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"latitude\": \"123123.321\",\r\n    \"longitude\":\"123123.000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/checkin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"checkin"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respon 200 logout",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Aug 2025 04:07:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Logged out successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "api checkout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7|ylkS777FquJ0ZoQ316u36plsVC4CTzq3Co51qR0fa61cd3bf",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"latitude\": \"12312.321\",\r\n    \"longitude\":\"123123.000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/checkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"checkout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respon 200 checkout",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"latitude\": \"12312.321\",\r\n    \"longitude\":\"123123.000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/checkout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"checkout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Aug 2025 09:10:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"checkout success\",\n    \"attendance\": {\n        \"id\": 21,\n        \"user_id\": 12,\n        \"date\": \"2025-08-18\",\n        \"time_in\": \"08:56:49\",\n        \"time_out\": \"09:10:52\",\n        \"latlong_in\": \"123123.321,123123.000\",\n        \"latlong_out\": \"12312.321,123123.000\",\n        \"created_at\": \"2025-08-18T08:56:49.000000Z\",\n        \"updated_at\": \"2025-08-18T09:10:52.000000Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "api update-profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7|ylkS777FquJ0ZoQ316u36plsVC4CTzq3Co51qR0fa61cd3bf",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/X280/Downloads/download.jpg"
+						},
+						{
+							"key": "face_embedding",
+							"value": "test1234567788qs",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/update-profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update-profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respon 200 update-profile",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/X280/Downloads/download.jpg"
+								},
+								{
+									"key": "face_embedding",
+									"value": "test1234567788qs",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/update-profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"update-profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Aug 2025 10:21:07 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Profile updated\",\n    \"user\": {\n        \"id\": 12,\n        \"name\": \"Boy Indi\",\n        \"email\": \"boyindi1905@gmail.com\",\n        \"email_verified_at\": null,\n        \"two_factor_secret\": null,\n        \"two_factor_recovery_codes\": null,\n        \"two_factor_confirmed_at\": null,\n        \"created_at\": \"2025-08-16T12:57:45.000000Z\",\n        \"updated_at\": \"2025-08-18T10:21:07.000000Z\",\n        \"phone\": \"081382631904\",\n        \"role\": \"staff\",\n        \"position\": \"frontend\",\n        \"department\": \"flutter mobile\",\n        \"face_embedding\": \"test1234567788qs\",\n        \"image_url\": \"zoMefEEoYTQIUh2YSYYSRrPK4b7RfkT6PQFbjl7k.jpg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "api-permission",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7|ylkS777FquJ0ZoQ316u36plsVC4CTzq3Co51qR0fa61cd3bf",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/X280/Downloads/download (1).jpg"
+						},
+						{
+							"key": "date",
+							"value": "2025-08-18",
+							"type": "text"
+						},
+						{
+							"key": "reason",
+							"value": "tugas balikpapan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/api-permission",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-permission"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respon 201 permission",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/X280/Downloads/download (1).jpg"
+								},
+								{
+									"key": "date",
+									"value": "2025-08-18",
+									"type": "text"
+								},
+								{
+									"key": "reason",
+									"value": "tugas balikpapan",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/api-permission",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"api-permission"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.11"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Aug 2025 10:39:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Permission created successfully\"\n}"
+				}
+			]
+		}
+	]
+}
