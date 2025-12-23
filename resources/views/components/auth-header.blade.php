@@ -1,6 +1,7 @@
-<div class="login-brand mb-4" style="margin-top: -20px;">
-    <img src="{{ asset('img/regware-logo.png') }}" alt="logo"
-         style="width: 150px; border-radius: 50%; padding: 10px; background-color: #ffffff;"
-         class="shadow-light">
+<div class="w-100" style="max-width: 400px; text-align: center;">
+    <img src="{{ asset('img/smart.png') }}" alt="logo" class="img-fluid"
+        style="
+           max-width: 150%;
+           transform: translate(-100px, 100px);
+         ">
 </div>
-
