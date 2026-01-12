@@ -1,8 +1,27 @@
-/**
- *
- * You can write your CSS code here, DO NOT touch the default JavaScript file
- * because it will make it harder for you to update.
- *
- */
+/* ============================= */
+/* NAVBAR BACKGROUND - HIJAU */
+/* ============================= */
+.navbar-bg {
+    background-color: #28a745 !important;
+}
 
-/*# sourceMappingURL=custom.css.map */
+.main-navbar {
+    background-color: #28a745 !important;
+}
+
+/* ============================= */
+/* NAVBAR TEXT & ICON */
+/* ============================= */
+.main-navbar .nav-link,
+.main-navbar .nav-link i,
+.main-navbar .navbar-brand {
+    color: #ffffff !important;
+}
+
+/* ============================= */
+/* SEARCH BAR */
+/* ============================= */
+.main-navbar .form-control {
+    background-color: #ffffff;
+    color: #333;
+}
